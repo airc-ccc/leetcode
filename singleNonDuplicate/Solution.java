@@ -15,16 +15,13 @@ class Solution {
         for(int j = 0;j + 2 - 1 < n;j++) {
             if (j == 0) {
                 if (nums[j] - nums[j+1] != 0) {
-                    System.out.println(j + "=0=" + (j + 1));
                     return nums[j];
                 }
             } else {
                 if (nums[j] - nums[j+1] != 0 && nums[j] - nums[j - 1] != 0) {
-                    System.out.println(j + "=1=" + (j + 1));
                     return nums[j];
                 }
                 if (nums[j] - nums[j+1] != 0 && nums[j] - nums[j - 1] == 0) {
-                    System.out.println(j + "=2=" + (j + 1));
                     res =  nums[j+1];
                 }
             }
